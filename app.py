@@ -211,6 +211,7 @@ def main():
     
         # ─── FOOTER (ALWAYS LAST) ─────────────────────────
     render_footer()
+    # ─── END ─────────────────────────
 
 
 
