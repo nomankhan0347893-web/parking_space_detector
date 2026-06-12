@@ -1,0 +1,10 @@
+path: ./dataset
+
+train: train/images
+val: val/images
+
+nc: 2
+
+names:
+  0: free_parking_space
+  1: not_free_parking_space
