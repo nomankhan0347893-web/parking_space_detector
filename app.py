@@ -175,10 +175,10 @@ def main():
 
 # ─── ADD THIS CHECK ─────────────────────────
     if image_bgr is None:
-    st.error("Could not decode image. Please upload a valid image file.")
-    return
+        st.error("Could not decode image. Please upload a valid image file.")
+        return
 
-image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
+    image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
 
     annotated, free_count, occ_count, total = run_detection(
         image_bgr, model, conf
