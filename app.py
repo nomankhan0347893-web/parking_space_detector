@@ -55,7 +55,7 @@ def run_detection(image_bgr: np.ndarray, model, conf: float, imgsz=640):
             aspect_ratio = box_width / box_height
 
 # Real parking spots are usually wider than tall (e.g., ratio 1.5 to 3)
-            if cls_id == 0 and (aspect_ratio < 0.4 or aspect_ratio > 4.0):
+            if cls_id == 0 and (aspect_ratio < 0.6 or aspect_ratio > 4.0):
                continue   # skip weird-shaped free detections
 
             # Only class 0 (free) and 1 (occupied) are used
